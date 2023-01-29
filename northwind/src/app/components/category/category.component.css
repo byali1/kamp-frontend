@@ -1,0 +1,7 @@
+#northwind-categories{
+    cursor: pointer;
+}
+.active{
+    background-color: black;
+    border: none;
+}
