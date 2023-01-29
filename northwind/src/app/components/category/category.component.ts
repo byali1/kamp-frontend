@@ -29,10 +29,20 @@ export class CategoryComponent implements OnInit {
     this.currentCategory = category;
   }
 
-  getCurrentCategory(category: Category) {
+  getCurrentCategoryClass(category: Category) {
     if (category == this.currentCategory) {
       return 'list-group-item list-group-item-action active';
     }
     return 'list-group-item list-group-item-action';
   }
+
+  getAllCategoryClass(){
+    if (!this.currentCategory) {
+      return 'list-group-item list-group-item-action active';
+    }else{
+      return 'list-group-item list-group-item-action';
+    }
+  }
+
+  
 }
